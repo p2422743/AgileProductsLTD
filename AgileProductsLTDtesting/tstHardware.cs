@@ -14,5 +14,17 @@ namespace AgileProductsLTDtesting
             Assert.IsNotNull(hardware);
 
         }
+
+        [TestMethod]
+        public void FineMethodOk()
+        {
+            clsHardware hardware = new clsHardware();
+
+            Boolean Found = false;
+
+            Found = hardware.Find(HardwareId);
+
+            Assert.IsTrue(Found);
+        }
     }
 }
